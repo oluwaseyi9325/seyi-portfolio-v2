@@ -64,6 +64,8 @@ const Experience = () => {
                   </span>
                   <motion.span variants={row.meta} className="muted block text-sm md:text-base">
                     {job.role}
+                    {/* On narrow screens the date column is hidden, so show it with the role. */}
+                    <span className="md:hidden"> · {job.duration}</span>
                   </motion.span>
                 </span>
                 <motion.span variants={row.meta} className="muted hidden text-sm md:block">
@@ -91,7 +93,6 @@ const Experience = () => {
                   >
                     <div className="grid gap-6 pb-8 md:grid-cols-12 md:pb-10">
                       <div className="muted space-y-1 text-sm md:col-span-3 md:col-start-2">
-                        <p className="md:hidden">{job.duration}</p>
                         <p>{job.location}</p>
                         {job.url && (
                           <a href={job.url} target="_blank" rel="noreferrer" className="link-underline inline-block text-ink dark:text-paper">
