@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-paper text-ink antialiased transition-colors duration-500 dark:bg-ink dark:text-paper;
+  }
+
+  ::selection {
+    @apply bg-ink text-paper dark:bg-paper dark:text-ink;
+  }
+
+  section[id] {
+    scroll-margin-top: 4rem;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1600px] px-4 md:px-8;
+  }
+
+  /* Thick dividing lines in the current text colour. */
+  .rule {
+    @apply border-ink dark:border-paper;
+  }
+
+  .muted {
+    @apply text-ink/60 dark:text-paper/60;
+  }
+
+  .display {
+    @apply font-bold uppercase leading-[0.85] tracking-[-0.05em];
+  }
+}
