@@ -38,4 +38,19 @@
   .display {
     @apply font-bold uppercase leading-[0.85] tracking-[-0.05em];
   }
+
+  /* Underline that wipes in from the left on hover and out to the right. */
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    content: "";
+    @apply absolute bottom-[-2px] left-0 h-px w-full origin-right scale-x-0 bg-current transition-transform duration-500 ease-expo;
+  }
+
+  .link-underline:hover::after,
+  .link-underline[aria-current="true"]::after {
+    @apply origin-left scale-x-100;
+  }
 }
