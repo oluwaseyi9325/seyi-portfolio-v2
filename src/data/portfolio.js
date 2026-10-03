@@ -59,3 +59,13 @@ export const stack = [
   { title: "Databases", items: ["MongoDB", "MySQL"] },
   { title: "Tools", items: ["Redux", "Firebase", "Paystack & Stripe", "GitHub Actions", "Cloud Hosting"] },
 ];
+
+// Two-letter badge used where no logo image is provided.
+export const initials = (name) =>
+  name
+    .replace(/[^A-Za-z0-9 ]/g, " ")
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0].toUpperCase())
+    .join("");
