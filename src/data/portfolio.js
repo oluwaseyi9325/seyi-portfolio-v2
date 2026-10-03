@@ -78,7 +78,7 @@ export const work = [
     company: "Tredi (ODJ Tech)",
     logo: trediLogo,
     role: "Mobile Developer (React Native)",
-    duration: "Dec, 2025 - Present",
+    duration: "Dec 2025 – Present",
     location: "Remote",
     url: "https://tredibooks.com/",
     responsibilities: [
@@ -92,7 +92,7 @@ export const work = [
     logo: conclaseLogo,
     logoBg: "#0f172a", // white logo
     role: "Frontend Developer",
-    duration: "Jul, 2025 - Present",
+    duration: "Jul 2025 – Present",
     location: "Lagos, Nigeria",
     url: "https://conclaseint.com/",
     responsibilities: [
@@ -106,7 +106,7 @@ export const work = [
     logo: smartmartLogo,
     logoBg: "#000000", // logo image has a black background
     role: "Mobile Developer (React Native)",
-    duration: "Mar, 2025 - Nov, 2025",
+    duration: "Mar 2025 – Nov 2025",
     location: "Remote, Abuja",
     url: "https://smartmartng.com/",
     responsibilities: [
@@ -117,20 +117,20 @@ export const work = [
   {
     company: "Afrikdish",
     role: "Frontend Developer Lead",
-    duration: "May, 2024 - Present",
+    duration: "May 2024 – 2025",
     location: "Canada (Remote)",
-    url: "https://afrikdish.com/",
+    url: null, // afrikdish.com is no longer online
     responsibilities: [
-      "Lead the frontend of an e-commerce platform for African food delivery in Canada.",
+      "Led the frontend of an e-commerce platform for African food delivery in Canada.",
       "Built user, vendor and admin dashboards and integrated Stripe payments.",
-      "Run weekly Scrum meetings and work with DevOps on deployments.",
+      "Ran weekly Scrum meetings and worked with DevOps on deployments.",
     ],
   },
   {
     company: "PorchPlus",
     logo: porchplusLogo,
     role: "Mobile Developer (React Native)",
-    duration: "Feb, 2024 - Jul, 2025",
+    duration: "Feb 2024 – Jul 2025",
     location: "Lagos, Nigeria",
     url: "https://porchplus.com/",
     responsibilities: [
@@ -142,7 +142,7 @@ export const work = [
     company: "Rubies Technology",
     logo: rubiesLogo,
     role: "Frontend Developer",
-    duration: "Jan, 2024 - Jan, 2025",
+    duration: "Jan 2024 – Jan 2025",
     location: "Lagos, Nigeria",
     url: "https://foundation.rubiestech.org/",
     responsibilities: [
@@ -151,21 +151,10 @@ export const work = [
     ],
   },
   {
-    company: "Shaperly Africa",
-    role: "Mobile Developer (React Native)",
-    duration: "Jan, 2023 - Jul, 2023",
-    location: "Rivers State, Nigeria",
-    url: null,
-    responsibilities: [
-      "Collaborated on driver and customer logistics apps connected via REST APIs.",
-      "Implemented offline data sync for low-connectivity environments.",
-    ],
-  },
-  {
     company: "SQI College of ICT",
     logo: sqiLogo,
     role: "Software Developer Instructor",
-    duration: "Aug, 2020 - May, 2023",
+    duration: "Aug 2020 – May 2023",
     location: "Ogbomoso, Nigeria",
     url: "https://sqi.edu.ng/",
     responsibilities: [
