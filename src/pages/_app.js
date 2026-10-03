@@ -30,6 +30,9 @@ export default function App({ Component, pageProps }) {
     <MotionConfig reducedMotion="user">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
         <meta key="og:url" property="og:url" content={`${profile.siteUrl}/`} />
         <meta property="og:type" content="website" />
