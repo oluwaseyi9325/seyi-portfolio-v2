@@ -33,7 +33,7 @@ export const socials = [
   { title: "LinkedIn", url: "https://www.linkedin.com/in/seyiadedokun/" },
   { title: "Github", url: "https://github.com/oluwaseyi9325" },
   { title: "X", url: "https://x.com/seyiadedokun2" },
-  { title: "Youtube", url: "https://www.youtube.com/@code_with_sheynet" },
+  { title: "YouTube", url: "https://www.youtube.com/@seyi_adedokun" },
 ];
 
 // The first line is the big About statement (keep it short); the second is the small note under it.
