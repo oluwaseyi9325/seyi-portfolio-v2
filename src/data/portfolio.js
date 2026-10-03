@@ -1,3 +1,14 @@
+import stacstartLogo from "@/assets/logos/stacstart.svg";
+import pitchighLogo from "@/assets/logos/pitchigh.png";
+import conclaseLogo from "@/assets/logos/conclase.svg";
+import conclaseAcademyLogo from "@/assets/logos/conclase-academy.png";
+import trediLogo from "@/assets/logos/tredi.svg";
+import copyupLogo from "@/assets/logos/copyup.png";
+import smartmartLogo from "@/assets/logos/smartmart.jpg";
+import porchplusLogo from "@/assets/logos/porchplus.svg";
+import rubiesLogo from "@/assets/logos/rubies.png";
+import sqiLogo from "@/assets/logos/sqi.png";
+
 // All portfolio content lives here. Edit this file to update the site —
 // the sections and project pages read from it, so nothing else needs to change.
 
@@ -65,6 +76,7 @@ export const stack = [
 export const work = [
   {
     company: "Tredi (ODJ Tech)",
+    logo: trediLogo,
     role: "Mobile Developer (React Native)",
     duration: "Dec, 2025 - Present",
     location: "Remote",
@@ -77,6 +89,8 @@ export const work = [
   },
   {
     company: "Conclase",
+    logo: conclaseLogo,
+    logoBg: "#0f172a", // white logo
     role: "Frontend Developer",
     duration: "Jul, 2025 - Present",
     location: "Lagos, Nigeria",
@@ -89,6 +103,8 @@ export const work = [
   },
   {
     company: "Smartmart",
+    logo: smartmartLogo,
+    logoBg: "#000000", // logo image has a black background
     role: "Mobile Developer (React Native)",
     duration: "Mar, 2025 - Nov, 2025",
     location: "Remote, Abuja",
@@ -112,6 +128,7 @@ export const work = [
   },
   {
     company: "PorchPlus",
+    logo: porchplusLogo,
     role: "Mobile Developer (React Native)",
     duration: "Feb, 2024 - Jul, 2025",
     location: "Lagos, Nigeria",
@@ -123,6 +140,7 @@ export const work = [
   },
   {
     company: "Rubies Technology",
+    logo: rubiesLogo,
     role: "Frontend Developer",
     duration: "Jan, 2024 - Jan, 2025",
     location: "Lagos, Nigeria",
@@ -145,6 +163,7 @@ export const work = [
   },
   {
     company: "SQI College of ICT",
+    logo: sqiLogo,
     role: "Software Developer Instructor",
     duration: "Aug, 2020 - May, 2023",
     location: "Ogbomoso, Nigeria",
@@ -165,6 +184,7 @@ export const projects = [
     slug: "stacstart",
     category: ["Web", "AI"],
     name: "Stacstart",
+    img: stacstartLogo,
     stack: "React.js, Next.js, Node.js, AI Integration",
     title: "Africa's AI-Powered Tech Career & Talent Platform",
     summary: "An AI-powered platform that trains, mentors and connects African tech talent to companies worldwide.",
@@ -190,6 +210,7 @@ export const projects = [
     slug: "pitchigh",
     category: ["Web"],
     name: "PitcHigh",
+    img: pitchighLogo,
     stack: "React.js, Next.js, Node.js",
     title: "Career Platform for IT Audit, GRC & InfoSec Professionals",
     summary: "Learning paths, certifications and community for IT Audit, GRC and InfoSec professionals.",
@@ -214,6 +235,7 @@ export const projects = [
     slug: "conclase-academy",
     category: ["Web"],
     name: "Conclase Academy",
+    img: conclaseAcademyLogo,
     stack: "React.js, Next.js, Node.js, Tailwind CSS",
     title: "Full-Featured Learning Platform for Conclase Academy",
     summary: "The online learning platform behind Conclase Academy, serving 3000+ learners.",
@@ -238,6 +260,8 @@ export const projects = [
     slug: "conclase-website",
     category: ["Web"],
     name: "Conclase Website",
+    img: conclaseLogo,
+    imgBg: "#0f172a", // white logo
     stack: "React.js, Next.js, Tailwind CSS",
     title: "Corporate Website for Conclase — Tech Company & Academy",
     summary: "The corporate website for Conclase, showcasing its software services and academy.",
@@ -261,6 +285,7 @@ export const projects = [
     slug: "tredi",
     category: ["Mobile"],
     name: "Tredi",
+    img: trediLogo,
     stack: "React Native, Node.js, Redux",
     title: "A Feature-Rich Mobile Application",
     summary: "An offline-first mobile app for managing invoices, expenses and products on the go.",
@@ -284,6 +309,7 @@ export const projects = [
     slug: "copyup",
     category: ["Web"],
     name: "Copyup",
+    img: copyupLogo,
     stack: "Next.js, React.js, Redux, Node.js",
     title: "A Learning Management System for Copywriters",
     summary: "An LMS where copywriters create, sell and take courses, with quizzes and certificates.",
