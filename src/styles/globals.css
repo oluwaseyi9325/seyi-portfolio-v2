@@ -54,3 +54,14 @@
     @apply origin-left scale-x-100;
   }
 }
+
+/* In the project index, fade every row except the one under the cursor. */
+.project-list .project-row {
+  transition: opacity 0.4s ease;
+}
+
+@media (hover: hover) {
+  .project-list:hover .project-row:not(:hover) {
+    opacity: 0.3;
+  }
+}
