@@ -97,7 +97,7 @@ const Hero = () => (
       </p>
       <Link href="/#contact" className="group flex items-start justify-end gap-2 text-right md:col-span-3">
         <span className="mt-[0.45em] h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
-        <span className="link-underline">Available for work</span>
+        <span className="link-underline">Let&apos;s connect</span>
       </Link>
     </motion.div>
   </section>
