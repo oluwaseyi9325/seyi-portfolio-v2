@@ -24,3 +24,9 @@ export const socials = [
   { title: "X", url: "https://x.com/seyiadedokun2" },
   { title: "Youtube", url: "https://www.youtube.com/@code_with_sheynet" },
 ];
+
+// The first line is the big About statement (keep it short); the second is the small note under it.
+export const about = [
+  "I turn ideas into fast, reliable web and mobile products that people enjoy using — working closely with founders, designers and teams from first sketch to launch.",
+  "I also spent years teaching software engineering at SQI College of ICT, and I still mentor developers and share what I learn on YouTube.",
+]
