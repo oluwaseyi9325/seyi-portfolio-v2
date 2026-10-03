@@ -7,6 +7,7 @@ import Services from "@/components/sections/Services";
 import Stack from "@/components/sections/Stack";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
 
 const Home = () => (
   <>
@@ -19,6 +20,7 @@ const Home = () => (
       <Stack />
       <Experience />
       <Projects />
+      <Contact />
     </main>
     <Footer />
   </>
