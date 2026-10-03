@@ -50,3 +50,12 @@ export const services = [
     text: "Years of teaching and mentoring developers — I enjoy levelling up the people around me.",
   },
 ];
+
+export const stack = [
+  { title: "Languages", items: ["JavaScript", "TypeScript", "Python", "Dart"] },
+  { title: "Frontend", items: ["React.js", "Next.js", "Angular", "Vue.js", "Svelte"] },
+  { title: "Mobile", items: ["React Native", "Expo", "Flutter"] },
+  { title: "Backend", items: ["Node.js", "Express.js", "NestJS", "GraphQL"] },
+  { title: "Databases", items: ["MongoDB", "MySQL"] },
+  { title: "Tools", items: ["Redux", "Firebase", "Paystack & Stripe", "GitHub Actions", "Cloud Hosting"] },
+];
