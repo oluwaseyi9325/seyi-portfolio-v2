@@ -30,3 +30,23 @@ export const about = [
   "I turn ideas into fast, reliable web and mobile products that people enjoy using — working closely with founders, designers and teams from first sketch to launch.",
   "I also spent years teaching software engineering at SQI College of ICT, and I still mentor developers and share what I learn on YouTube.",
 ]
+
+// Rows in the "What I do" section.
+export const services = [
+  {
+    title: "Web applications",
+    text: "Fast, accessible web apps, dashboards and LMS platforms with React, Next.js and Tailwind.",
+  },
+  {
+    title: "Mobile apps",
+    text: "Cross-platform iOS & Android apps with React Native and Expo — offline-first when it matters.",
+  },
+  {
+    title: "AI-powered products",
+    text: "Bringing AI into real products: smart job matching, recommendations and developer tools.",
+  },
+  {
+    title: "Teaching & mentoring",
+    text: "Years of teaching and mentoring developers — I enjoy levelling up the people around me.",
+  },
+];
