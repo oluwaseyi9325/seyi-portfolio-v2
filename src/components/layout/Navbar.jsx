@@ -12,6 +12,47 @@ const LINKS = [
   { id: "contact", label: "Contact" },
 ];
 
+// Seyi's local date and time (12-hour), so visitors in other time zones know when
+// to expect a reply. Rendered only after mount: the server's clock would not match.
+const LocalTime = ({ className = "" }) => {
+  const [parts, setParts] = useState(null);
+
+  useEffect(() => {
+    const formatter = new Intl.DateTimeFormat("en-GB", {
+      weekday: "short",
+      day: "numeric",
+      month: "short",
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: profile.timeZone,
+      timeZoneName: "short",
+    });
+    const update = () => {
+      setParts(Object.fromEntries(formatter.formatToParts(new Date()).map((part) => [part.type, part.value])));
+    };
+    update();
+    const id = setInterval(update, 10000);
+    return () => clearInterval(id);
+  }, []);
+
+  return (
+    <span className={`whitespace-nowrap tabular-nums ${className}`}>
+      {profile.location}
+      {parts && (
+        <>
+          {" · "}
+          {parts.weekday} {parts.day} {parts.month}
+          {" · "}
+          {parts.hour}
+          <span className="animate-blink">:</span>
+          {parts.minute} {parts.dayPeriod.toUpperCase()} {parts.timeZoneName}
+        </>
+      )}
+    </span>
+  );
+};
+
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +75,8 @@ const Navbar = () => {
             <sup className="ml-0.5 text-[10px] font-normal">©{new Date().getFullYear()}</sup>
           </Link>
 
+          {/* Centred in the gap between the name and the links, so it never collides with them. */}
+          <LocalTime className="hidden flex-1 px-6 text-center lg:block" />
 
           <div className="hidden items-center gap-8 md:flex">
             {LINKS.map((link) => (
@@ -88,6 +131,7 @@ const Navbar = () => {
               <button onClick={toggleTheme} className="link-underline">
                 {themeLabel}
               </button>
+              <LocalTime className="text-paper/60" />
               <a href={`mailto:${profile.email}`} className="link-underline">
                 {profile.email}
               </a>
