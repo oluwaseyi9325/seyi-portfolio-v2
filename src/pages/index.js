@@ -5,6 +5,7 @@ import ScrollBand from "@/components/sections/ScrollBand";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Stack from "@/components/sections/Stack";
+import Experience from "@/components/sections/Experience";
 
 const Home = () => (
   <>
@@ -15,6 +16,7 @@ const Home = () => (
       <About />
       <Services />
       <Stack />
+      <Experience />
     </main>
     <Footer />
   </>
