@@ -2,7 +2,7 @@
 
 Personal portfolio for **Seyi Adedokun**, Software Engineer (React.js, Next.js, React Native, Node.js).
 
-Editorial, mostly black-and-white layout: huge type, thick rules, numbered sections. Light or dark follows the visitor's device until they pick one with the toggle.
+Editorial, mostly black-and-white layout: huge type, thick rules, numbered sections. Dark by default; visitors can switch to light with the toggle and it's remembered.
 
 ## Stack
 

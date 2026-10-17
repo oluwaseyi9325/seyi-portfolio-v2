@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }) {
         <meta key="description" name="description" content={profile.description} />
         <meta name="author" content={profile.name} />
         <title key="title">{title}</title>
-        <meta name="theme-color" content="#efede8" />
+        <meta name="theme-color" content="#121212" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
