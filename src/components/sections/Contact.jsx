@@ -1,10 +1,13 @@
 import { profile, socials } from "@/data/portfolio";
 import Reveal, { Mask } from "@/components/ui/Reveal";
+import { ResumeLink } from "@/components/resume/ResumeViewer";
 
-const LINKS = [
-  ...socials,
-  { title: "Résumé", url: profile.resume, download: true },
-];
+const linkClass = "group flex items-center justify-between py-3 text-lg";
+const arrow = (
+  <span className="transition-transform duration-500 ease-expo group-hover:-translate-y-1 group-hover:translate-x-1">
+    ↗
+  </span>
+);
 
 const Contact = () => (
   <section id="contact" className="container-page pb-16 pt-24 md:pt-32">
@@ -34,20 +37,20 @@ const Contact = () => (
         me, and my résumé has everything else.
       </p>
       <ul className="grid grid-cols-2 gap-x-8 md:col-span-6 md:col-start-7">
-        {LINKS.map((link) => (
+        {socials.map((link) => (
           <li key={link.title} className="border-b border-ink/20 dark:border-paper/20">
-            <a
-              href={link.url}
-              {...(link.download ? { download: true } : { target: "_blank", rel: "noreferrer" })}
-              className="group flex items-center justify-between py-3 text-lg"
-            >
+            <a href={link.url} target="_blank" rel="noreferrer" className={linkClass}>
               {link.title}
-              <span className="transition-transform duration-500 ease-expo group-hover:-translate-y-1 group-hover:translate-x-1">
-                ↗
-              </span>
+              {arrow}
             </a>
           </li>
         ))}
+        <li className="border-b border-ink/20 dark:border-paper/20">
+          <ResumeLink className={linkClass}>
+            Résumé
+            {arrow}
+          </ResumeLink>
+        </li>
       </ul>
     </Reveal>
   </section>

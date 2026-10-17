@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { about, profile } from "@/data/portfolio";
 import Reveal from "@/components/ui/Reveal";
+import { ResumeLink } from "@/components/resume/ResumeViewer";
 
 const Word = ({ children, progress, range }) => {
   const opacity = useTransform(progress, range, [0.15, 1]);
@@ -34,8 +35,9 @@ const About = () => {
           <Reveal className="rule mt-14 grid gap-6 border-t pt-6 md:grid-cols-2">
             <p className="muted text-lg leading-relaxed">{about[1]}</p>
             <div className="flex flex-col items-start gap-2 text-lg md:items-end">
-              <a href={profile.resume} download className="link-underline">
-                Download résumé ↓
+              <ResumeLink className="link-underline">View résumé →</ResumeLink>
+              <a href={profile.resume} download className="link-underline text-base opacity-70">
+                Download PDF ↓
               </a>
               <a href={`mailto:${profile.email}`} className="link-underline">
                 {profile.email}
