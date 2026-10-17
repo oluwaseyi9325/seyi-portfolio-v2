@@ -5,6 +5,7 @@ import '@fontsource/instrument-serif/400-italic.css';
 import Head from 'next/head';
 import { MotionConfig } from 'framer-motion';
 import { profile, socials } from '@/data/portfolio';
+import { ResumeProvider } from '@/components/resume/ResumeViewer';
 
 const title = `${profile.name} | ${profile.role} & React Native Developer`;
 const imageUrl = `${profile.siteUrl}${profile.image}`;
@@ -57,7 +58,9 @@ export default function App({ Component, pageProps }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </Head>
-      <Component {...pageProps} />
+      <ResumeProvider>
+        <Component {...pageProps} />
+      </ResumeProvider>
     </MotionConfig>
   );
 
