@@ -87,8 +87,8 @@ const Hero = () => (
       className="rule mt-6 grid grid-cols-2 gap-x-4 gap-y-3 border-t-2 pt-4 text-sm md:grid-cols-12 md:text-base"
     >
       <p className="col-span-2 md:col-span-5">
-        5+ years building with React, Next.js, React Native and Node.js — for startups and product teams across
-        Africa and beyond.
+        5+ years building web and mobile products that real people use — shipped to both app stores and trusted
+        by startups and product teams across Africa and beyond.
       </p>
       <p className="muted md:col-span-3 md:col-start-7">
         Based in {profile.location}

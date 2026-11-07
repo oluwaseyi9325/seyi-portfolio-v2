@@ -20,7 +20,7 @@ export const profile = {
   image: "/profile_pic.jpg", // square headshot: favicon and link previews
   portrait: "/seyi-portrait.jpg", // hero photo
   description:
-    "Software Engineer specialising in React.js, Next.js, React Native, and Node.js. Building scalable web and mobile applications for startups and product teams across Africa and beyond.",
+    "Seyi Adedokun is a Software Engineer building fast, reliable web and mobile products for startups and product teams across Africa and beyond.",
   email: "adedokunseyi96@gmail.com",
   resume: "/Seyi_Adedokun_Resume.pdf",
   twitterHandle: "@seyiadedokun2",
