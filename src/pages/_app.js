@@ -7,7 +7,7 @@ import { MotionConfig } from 'framer-motion';
 import { profile, socials } from '@/data/portfolio';
 import { ResumeProvider } from '@/components/resume/ResumeViewer';
 
-const title = `${profile.name} | ${profile.role} & React Native Developer`;
+const title = `${profile.name} | ${profile.role}`;
 const imageUrl = `${profile.siteUrl}${profile.image}`;
 
 const personSchema = {
