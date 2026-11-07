@@ -110,7 +110,7 @@ export const work = [
     location: "Remote, Abuja",
     url: "https://smartmartng.com/",
     responsibilities: [
-      "Developed and deployed a logistics mobile app to the Google Play Store and Apple App Store.",
+      "Developed and deployed the SmartMart shopping and delivery app to the Google Play Store and Apple App Store.",
       "Monitored and optimised app performance weekly, reducing crash rates across devices.",
     ],
   },
