@@ -99,6 +99,22 @@ const Experience = () => {
                             Visit website ↗
                           </a>
                         )}
+                        {job.apps?.length > 0 && (
+                          <div className="space-y-1 pt-3">
+                            <p className="text-xs uppercase tracking-wider">Live apps</p>
+                            {job.apps.map((app) => (
+                              <a
+                                key={app.url}
+                                href={app.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="link-underline block w-fit text-ink dark:text-paper"
+                              >
+                                {app.label} ↗
+                              </a>
+                            ))}
+                          </div>
+                        )}
                       </div>
                       <ul className="space-y-3 text-base leading-relaxed md:col-span-8 md:text-lg">
                         {job.responsibilities.map((item, itemIndex) => (

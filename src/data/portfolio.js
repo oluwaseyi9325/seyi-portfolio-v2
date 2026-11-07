@@ -73,6 +73,7 @@ export const stack = [
 
 // `logo` is optional: import an image to show a company logo instead of the
 // initials badge; `logoBg` sets the tile colour behind it (default white).
+// `apps` lists live store links for apps built in that role (shown when the row is opened).
 export const work = [
   {
     company: "Tredi (ODJ Tech)",
@@ -81,6 +82,10 @@ export const work = [
     duration: "Dec 2025 – Present",
     location: "Remote",
     url: "https://tredibooks.com/",
+    apps: [
+      { label: "TrediBooks on Google Play", url: "https://play.google.com/store/apps/details?id=com.odjtech.tredi" },
+      { label: "TrediBooks on the App Store", url: "https://apps.apple.com/us/app/tredibooks/id6756811332" },
+    ],
     responsibilities: [
       "Building a mobile invoice management system supporting invoice creation, expense tracking, and product management.",
       "Implementing full offline functionality, so users can work without internet and auto-sync when back online.",
@@ -109,6 +114,10 @@ export const work = [
     duration: "Mar 2025 – Nov 2025",
     location: "Remote, Abuja",
     url: "https://smartmartng.com/",
+    apps: [
+      { label: "SmartMart on Google Play", url: "https://play.google.com/store/apps/details?id=com.smartmart.shopsmart" },
+      { label: "SmartMart on the App Store", url: "https://apps.apple.com/us/app/smartmart/id6749483719" },
+    ],
     responsibilities: [
       "Developed and deployed the SmartMart shopping and delivery app to the Google Play Store and Apple App Store.",
       "Monitored and optimised app performance weekly, reducing crash rates across devices.",
@@ -133,6 +142,10 @@ export const work = [
     duration: "Feb 2024 – Jul 2025",
     location: "Lagos, Nigeria",
     url: "https://porchplus.com/",
+    apps: [
+      { label: "Tenant app on the App Store", url: "https://apps.apple.com/ng/app/porchplus-rent-a-new-home/id6738395263" },
+      { label: "Property Manager app on the App Store", url: "https://apps.apple.com/ng/app/porchplus-property-manager/id6745434612" },
+    ],
     responsibilities: [
       "Built two React Native apps: a Tenant App and a Property Management App.",
       "Implemented in-app chat, push notifications and geolocation-based property discovery.",
