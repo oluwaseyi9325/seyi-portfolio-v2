@@ -98,7 +98,7 @@ export const work = [
     responsibilities: [
       "Develop and maintain multiple web products using React.js and Next.js.",
       "Built Stacstart: an LMS with AI-powered job matching and AI course video generation.",
-      "Built and maintain the Conclase Academy LMS, serving 3000+ learners.",
+      "Built and maintain the Conclase Academy LMS, serving 10,000+ learners.",
     ],
   },
   {
@@ -227,7 +227,7 @@ export const projects = [
     img: conclaseAcademyLogo,
     stack: "React.js, Next.js, Node.js, Tailwind CSS",
     title: "Full-Featured Learning Platform for Conclase Academy",
-    summary: "The online learning platform behind Conclase Academy, serving 3000+ learners.",
+    summary: "The online learning platform behind Conclase Academy, serving 10,000+ learners.",
     liveDemo: "https://conclaseacademy.us/",
     sourceCode: null,
     description: [
