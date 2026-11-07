@@ -8,14 +8,14 @@ import { profile, socials } from '@/data/portfolio';
 import { ResumeProvider } from '@/components/resume/ResumeViewer';
 
 const title = `${profile.name} | ${profile.role}`;
-const imageUrl = `${profile.siteUrl}${profile.image}`;
+const shareImageUrl = `${profile.siteUrl}${profile.shareImage}`;
 
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: profile.name,
   url: `${profile.siteUrl}/`,
-  image: imageUrl,
+  image: `${profile.siteUrl}${profile.portrait}`,
   email: profile.email,
   jobTitle: profile.role,
   description: profile.description,
@@ -40,14 +40,17 @@ export default function App({ Component, pageProps }) {
         <meta property="og:site_name" content={`${profile.name} Portfolio`} />
         <meta key="og:title" property="og:title" content={title} />
         <meta key="og:description" property="og:description" content={profile.description} />
-        <meta property="og:image" content={imageUrl} />
+        <meta property="og:image" content={shareImageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${profile.name} — ${profile.role}`} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content={profile.twitterHandle} />
         <meta name="twitter:creator" content={profile.twitterHandle} />
         <meta key="twitter:title" name="twitter:title" content={title} />
         <meta key="twitter:description" name="twitter:description" content={profile.description} />
-        <meta name="twitter:image" content={imageUrl} />
+        <meta name="twitter:image" content={shareImageUrl} />
 
         <meta key="description" name="description" content={profile.description} />
         <meta name="author" content={profile.name} />

@@ -17,7 +17,7 @@ export const profile = {
   firstName: "Seyi",
   role: "Software Engineer",
   siteUrl: "https://seyiportfolio.vercel.app",
-  image: "/profile_pic.jpg", // square headshot: favicon and link previews
+  shareImage: "/og-image.jpg", // 1200x630 link-preview image (source: cv/og-image.html)
   portrait: "/seyi-portrait.jpg", // hero photo
   description:
     "Seyi Adedokun is a Software Engineer building fast, reliable web and mobile products for startups and product teams across Africa and beyond.",
